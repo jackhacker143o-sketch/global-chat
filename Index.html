@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Global Chat Pro 🌍</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginScreen" class="login-screen">
+    <h2>🌍 Global Chat Pro</h2>
+    <button id="googleLogin">Sign in with Google</button>
+</div>
+
+<div id="chatApp" class="app" style="display:none;">
+    <div class="header">
+        <img id="userPhoto" class="avatar">
+        <span id="userName"></span>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div id="messages" class="messages"></div>
+
+    <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
